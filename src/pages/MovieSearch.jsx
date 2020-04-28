@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
+import Header from "../components/Header";
 import ResultsGrid from "../components/ResultsGrid";
 import axios from "axios";
 
@@ -25,7 +26,7 @@ const MovieSearch = () => {
 
   return (
     <>
-      <h1>This Movie Changed Me </h1>
+      <Header header='This Movie Changed Me' />
       <input
         id='outlined-search'
         label='Search field'

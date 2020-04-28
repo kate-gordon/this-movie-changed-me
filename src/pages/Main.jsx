@@ -9,7 +9,7 @@ const Main = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          height: "100vh",
+          height: "80vh",
           margin: "5rem",
         }}
       >
