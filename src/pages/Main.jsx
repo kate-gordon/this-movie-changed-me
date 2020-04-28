@@ -10,7 +10,8 @@ const Main = () => {
           alignItems: "center",
           justifyContent: "space-between",
           height: "80vh",
-          margin: "5rem",
+          marginLeft: "5rem",
+          marginRight: "5rem",
         }}
       >
         <Header header='This Movie Changed Me' />
@@ -18,7 +19,6 @@ const Main = () => {
           style={{
             width: "30%",
             marginRight: "20px",
-            border: "2px solid black",
           }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum similique

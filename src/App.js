@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Main from "./pages/Main";
 import MovieSearch from "./pages/MovieSearch";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
               listStyleType: "none",
               display: "flex",
               justifyContent: "flex-end",
+              height: "10vh",
             }}
           >
             <li style={{ margin: "5px", padding: "5px" }}>
