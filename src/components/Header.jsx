@@ -6,8 +6,11 @@ const Header = (props) => {
       <h1
         style={{
           fontSize: "4em",
+          fontWeight: "100px",
           width: "100px",
           margin: "10px",
+          color: "#1d1d1f",
+          fontFamily: "EB Garamond",
         }}
       >
         {props.header}

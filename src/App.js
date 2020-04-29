@@ -13,22 +13,6 @@ function App() {
       <div className='App'>
         <Router>
           <div>
-            <ul
-              style={{
-                listStyleType: "none",
-                display: "flex",
-                justifyContent: "flex-end",
-                height: "10vh",
-              }}
-            >
-              <li style={{ margin: "5px", padding: "5px" }}>
-                <Link to='/'>Home</Link>
-              </li>
-              <li style={{ margin: "5px", padding: "5px" }}>
-                <Link to='/experience'>The Experience</Link>
-              </li>
-            </ul>
-
             <Switch>
               <Route path='/experience'>
                 <MovieSearch />

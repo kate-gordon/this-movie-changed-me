@@ -1,5 +1,4 @@
 import React from "react";
-import MovieSearch from "../pages/MovieSearch";
 
 const Tile = (props) => {
   return (
