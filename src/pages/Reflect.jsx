@@ -1,13 +1,11 @@
-import React from 'react'; 
+import React from "react";
 
 const Reflect = () => {
-    return (
-        <>
-        <div className='text-box'>
+  return (
+    <>
+      <div className='text-box'>I am the Reflect Page</div>
+    </>
+  );
+};
 
-        </div>    
-        </>
-    )
-}
-
-export default Reflect; 
+export default Reflect;

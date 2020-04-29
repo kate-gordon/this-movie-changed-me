@@ -1,28 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import Button from "../components/Button";
 import Header from "../components/Header";
 import ResultsGrid from "../components/ResultsGrid";
-import axios from "axios";
+import { MovieContext } from "../context/index";
 
 const MovieSearch = () => {
-  const [results, setMovieResults] = useState([]);
-  const [movie, setSearchMovie] = useState("");
-
-  const handleChangeInputTitle = async (e) => {
-    e.preventDefault();
-    setSearchMovie({ movie: e.target.value });
-  };
-
-  // Movie search
-
-  const handleSearchMovieSubmit = async (e) => {
-    const movieSearch = encodeURIComponent(`${movie.movie}`);
-    const res = await axios(
-      `https://api.themoviedb.org/3/search/movie?api_key=7a5e08206be3323eb3abdd03cd7b1d8c&language=en-US&query=${movieSearch}&page=1&include_adult=false`
-    );
-    const results = await res.data;
-    setMovieResults({ results: results });
-  };
+  const appContext = useContext(MovieContext);
+  const {
+    handleChangeInputTitle,
+    handleSearchMovieSubmit,
+    results,
+  } = appContext;
 
   return (
     <>
@@ -34,7 +22,7 @@ const MovieSearch = () => {
         onChange={handleChangeInputTitle}
       />
       <Button onClick={handleSearchMovieSubmit} label='Search' />
-      <ResultsGrid results={results.results} />
+      <ResultsGrid results={results} />
     </>
   );
 };
