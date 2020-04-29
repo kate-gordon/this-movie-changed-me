@@ -21,7 +21,7 @@ const ResultsGrid = () => {
     return (
       <Tile key={movie.id} title={movie.title}>
         {movie.backdrop_path !== null ? (
-          <img src={srcLink} alt={movie.title} />
+          <img style={{ maxWidth: "400px" }} src={srcLink} alt={movie.title} />
         ) : (
           <h2>Image Unavailable</h2>
         )}
@@ -55,13 +55,14 @@ const ResultsGrid = () => {
       ) : (
         <h2> No Movie Selected</h2>
       )}
-      <ul
+      <div
         style={{
-          listStyleType: "none",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         {movieResults}
-      </ul>
+      </div>
     </>
   );
 };

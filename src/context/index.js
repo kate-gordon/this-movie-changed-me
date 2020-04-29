@@ -10,12 +10,14 @@ const MovieProvider = (props) => {
   const [movie, setSearchMovie] = useState("");
   const [selMovie, setSelectedMovie] = useState();
 
+  // Handling change when user Searches
+
   const handleChangeInputTitle = async (e) => {
     e.preventDefault();
     setSearchMovie({ movie: e.target.value });
   };
 
-  // Movie search
+  // Handling moviedb API call
 
   const handleSearchMovieSubmit = async (e) => {
     const movieSearch = encodeURIComponent(`${movie.movie}`);
