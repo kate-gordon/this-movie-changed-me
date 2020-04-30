@@ -1,31 +1,28 @@
 import React from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import "./styles.css";
 
 const Main = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          height: "100vh",
-          marginLeft: "5rem",
-          marginRight: "5rem",
-        }}
-      >
-        <div className='main-title-box'>
+      <div className='grid-container'>
+        <div className='main-title-box tmcm'>
           <Header header='This Movie Changed Me' />
         </div>
-        <div className='main-title-box'>
+        <p className='intro'>
+          Welcome! This is a web experience in honor of the This Movie Changed
+          Me podcast. Take a moment to explore & revisit some of your most
+          impactful movie experiences
+        </p>
+        <div className='main-title-box exp'>
           <div style={{ fontSize: "3em" }}>
             <Link style={{ color: "#1d1d1f" }} to='/experience'>
               Experience{" "}
             </Link>
           </div>
         </div>
-        <div className='main-title-box'>
+        <div className='main-title-box links'>
           <ul style={{ listStyleType: "none" }}>
             <li style={{ padding: "10px", fontSize: "2em" }}>The Podcast</li>
             <li style={{ padding: "10px", fontSize: "2em" }}>
