@@ -17,14 +17,16 @@ const ResultsGrid = () => {
   let resultArray = arr();
 
   const movieResults = resultArray.map(function (movie, index) {
-    const srcLink = `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`;
+    const srcLink = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+    const backLink = `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`;
     return (
       <Tile key={movie.id} title={movie.title}>
-        {movie.backdrop_path !== null ? (
-          <img style={{ maxWidth: "400px" }} src={srcLink} alt={movie.title} />
+        {movie.poster_path !== null ? (
+          <img src={srcLink} alt={movie.title} />
         ) : (
-          <h2>Image Unavailable</h2>
+          <img src={backLink} alt={movie.title} />
         )}
+
         {movie.title}
         <Button
           onClick={() => setSelectedMovie(results.results.results[index])}
@@ -34,14 +36,13 @@ const ResultsGrid = () => {
     );
   });
 
-  
   return (
     <>
-      
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          gridGap: "10px",
         }}
       >
         {movieResults}

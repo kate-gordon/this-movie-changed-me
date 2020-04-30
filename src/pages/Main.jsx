@@ -15,13 +15,12 @@ const Main = () => {
           Me podcast. Take a moment to explore & revisit some of your most
           impactful movie experiences
         </p>
-        <div className='main-title-box exp'>
-          <div style={{ fontSize: "3em" }}>
-            <Link style={{ color: "#1d1d1f" }} to='/experience'>
-              Experience{" "}
-            </Link>
+        <Link style={{ color: "#1d1d1f" }} to='/experience'>
+          <div className='main-title-box exp'>
+            <div style={{ fontSize: "3em" }}>Experience </div>
           </div>
-        </div>
+        </Link>
+
         <div className='main-title-box links'>
           <ul style={{ listStyleType: "none" }}>
             <li style={{ padding: "10px", fontSize: "2em" }}>The Podcast</li>
