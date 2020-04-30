@@ -26,12 +26,22 @@ const ResultsGrid = () => {
         ) : (
           <img src={backLink} alt={movie.title} />
         )}
-
-        {movie.title}
-        <Button
-          onClick={() => setSelectedMovie(results.results.results[index])}
-          label='Select'
-        />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-around",
+            margin: "5px",
+          }}
+        >
+          {movie.title}
+          {movie.release_date}
+          <Button
+            style={{ borderRadius: "40%", maxWidth: "100px", height: "20px" }}
+            onClick={() => setSelectedMovie(results.results.results[index])}
+            label='Select'
+          />
+        </div>
       </Tile>
     );
   });

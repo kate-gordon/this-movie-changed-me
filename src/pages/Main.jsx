@@ -17,7 +17,7 @@ const Main = () => {
         </p>
         <Link style={{ color: "#1d1d1f" }} to='/experience'>
           <div className='main-title-box exp'>
-            <div style={{ fontSize: "3em" }}>Experience </div>
+            <div style={{ fontSize: "3em" }}>Enter </div>
           </div>
         </Link>
 
