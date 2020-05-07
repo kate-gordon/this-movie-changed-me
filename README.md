@@ -8,10 +8,12 @@ During this quarantine, I've been having so many great conversations about the m
 
 ## Built using
 
-React
-React-router
-Axios
-Context API
+- React
+- React-router
+- Axios
+- Context API
+
+* CSS Grid
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
