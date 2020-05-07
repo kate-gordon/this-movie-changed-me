@@ -1,4 +1,4 @@
-====== This Movie Changed Me ======
+# This Movie Changed Me
 
 A React Application bringing you through an interactive experience inspired by the This Movie Changed Me podcast. I started this project after listening to an amazing episode about the Nightmare Before Christmas.
 
@@ -6,7 +6,7 @@ During this quarantine, I've been having so many great conversations about the m
 
 ## This app is in progress. Release of MVP is scheduled for May 20th!
 
-### Built using
+## Built using
 
 React
 React-router
