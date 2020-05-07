@@ -20,21 +20,20 @@ const MovieSearch = () => {
     <button
       type='button'
       onClick={() => {
+        
         history.push("/reflect");
       }}
     >
-      Click Me!
+      Next
     </button>
   ));
 
   return (
     <>
       <div className='movie-search-header'>
-        <div className='intro-p'>Name a movie that had an impact on you.</div>
+        <div className='intro-p'>Enter Movie Title</div>
         <div className='home-link'>
-          <Link style={{ color: "#1d1d1f" }} to='/'>
-            Home
-          </Link>
+          <Link to='/'>Home</Link>
         </div>
         <div className='search-box'>
           <input
@@ -48,7 +47,7 @@ const MovieSearch = () => {
         {selMovie !== undefined ? (
           <>
             <h2 className='select'>{selMovie.title}</h2>
-            <RouteButton />
+            <RouteButton className='route-btn' />
           </>
         ) : (
           <h2 className='select'> No Movie Selected</h2>

@@ -35,7 +35,6 @@ const ResultsGrid = () => {
           }}
         >
           {movie.title}
-          {movie.release_date}
           <Button
             style={{ borderRadius: "40%", maxWidth: "100px", height: "20px" }}
             onClick={() => setSelectedMovie(results.results.results[index])}
