@@ -20,29 +20,28 @@ const MovieSearch = () => {
     <button
       type='button'
       onClick={() => {
-        
         history.push("/reflect");
       }}
+      style={{ maxWidth: "100px" }}
     >
-      Next
+      NEXT
     </button>
   ));
 
   return (
     <>
       <div className='movie-search-header'>
-        <div className='intro-p'>Enter Movie Title</div>
         <div className='home-link'>
           <Link to='/'>Home</Link>
         </div>
         <div className='search-box'>
           <input
             id='outlined-search'
-            label='Search field'
+            placeholder='Search Movie'
             type='search'
             onChange={handleChangeInputTitle}
           />
-          <Button onClick={handleSearchMovieSubmit} label='Search' />
+          <Button onClick={handleSearchMovieSubmit} label='SEARCH' />
         </div>
         {selMovie !== undefined ? (
           <>

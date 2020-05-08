@@ -16,7 +16,7 @@ const ResultsGrid = () => {
 
   let resultArray = arr();
 
-  const movieResults = resultArray.map(function (movie, index) {
+  const displayMovieResults = resultArray.map(function (movie, index) {
     const srcLink = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
     const backLink = `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`;
     return (
@@ -54,7 +54,7 @@ const ResultsGrid = () => {
           gridGap: "10px",
         }}
       >
-        {movieResults}
+        {displayMovieResults}
       </div>
     </>
   );

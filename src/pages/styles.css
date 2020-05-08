@@ -1,3 +1,7 @@
+input {
+    width: 300px;
+}
+
 /*  Main Page */
 
 .grid-container {
@@ -57,16 +61,10 @@
 .movie-search-header {
     display: grid;
     grid-template:
-        "intro-p search  home"
-        "intro-p  search  select"
-        " intro-p search route";
+        "search  home"
+        "search  select"
+        "search route";
 
-}
-
-.intro-p {
-    grid-area: intro-p;
-    align-self: center;
-    font-size: 2em;
 }
 
 .search-box {
